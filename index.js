@@ -11,6 +11,7 @@ const newsQuery = document.getElementById("newsQuery");
 const newsType = document.getElementById("newsType");
 const newsdetails = document.getElementById("newsdtails");
 //apis
+const API_KEY = "pub_4450810716ff32cbbde27fda8ca57d7c4b416"
 
 generalBtn.addEventListener("click", function(){
 
