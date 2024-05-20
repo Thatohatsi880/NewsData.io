@@ -16,11 +16,6 @@ const sources_news = "https://newsdata.io/api/1/latest?apikey=pub_4450810716ff32
 
 newsDataArr = [];
 
-sportsBtn.addEventListen("click", function(){
-    newsdetails.innerHTML="<h4>Search : "+newsdetails.value+"</h4>";
-    fetchSourceNews();
-})
-
 
 const fetchSourceNews = async () => {
     const response = await fetch(sources_news);
@@ -94,6 +89,11 @@ function displayNews() {
 
         newsdetails.appendChild(col);
     });
+
+    sportsBtn.addEventListen("click", function(){
+        newsdetails.innerHTML="<h4>Search : "+newsdetails.value+"</h4>";
+        fetchSourceNews();
+    })
 
 }
 
