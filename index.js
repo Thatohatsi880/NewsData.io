@@ -1,16 +1,7 @@
-//variables
-// const generalBtn = document.getElementById("genral");
-// const businessBtn = document.getElementById("business");
-// const sportsBtn = document.getElementById("sport");
-// const entertainmentBtn = document.getElementById("entertainment");
-// const technologyBtn = document.getElementById("technology");
+
 const searchBtn = document.getElementById("searchBtn");
-
-
-// const newsQuery = document.getElementById("newsQuery");
-// const newsType = document.getElementById("newsType");
 const newsdetails = document.getElementById("newsdetails");
-//apis
+
 const API_KEY = "pub_4450810716ff32cbbde27fda8ca57d7c4b416"
 const sources_news = "https://newsdata.io/api/1/latest?apikey=pub_4450810716ff32cbbde27fda8ca57d7c4b416"
 
@@ -36,11 +27,6 @@ fetchSourceNews()
 function displayNews() {
 
     newsdetails.innerHTML = "";
-
-    // if(newsDataArr.length == 0) {
-    //     newsdetails.innerHTML = "<h5>No data found.</h5>"
-    //     return;
-    // }
 
     newsDataArr.forEach(news => {
 
@@ -90,10 +76,10 @@ function displayNews() {
         newsdetails.appendChild(col);
     });
 
-    sportsBtn.addEventListen("click", function(){
-        newsdetails.innerHTML="<h4>Search : "+newsdetails.value+"</h4>";
-        fetchSourceNews();
-    })
+    // sportsBtn.addEventListen("click", function(){
+    //     newsdetails.innerHTML="<h4>Search : "+newsdetails.value+"</h4>";
+    //     fetchSourceNews();
+    
 
 }
 
