@@ -76,9 +76,11 @@ function displayNews() {
         newsdetails.appendChild(col);
     });
 
-    // sportsBtn.addEventListen("click", function(){
-    //     newsdetails.innerHTML="<h4>Search : "+newsdetails.value+"</h4>";
-    //     fetchSourceNews();
+    
+    searchBtn.addEventListener("click", function(){
+        newsdetails.innerHTML="<h4>Search : "+newsdetails.value+"</h4>";
+        fetchSourceNews();
+    });
     
 
 }
