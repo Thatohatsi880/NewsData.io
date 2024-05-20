@@ -4,7 +4,7 @@
 // const sportsBtn = document.getElementById("sport");
 // const entertainmentBtn = document.getElementById("entertainment");
 // const technologyBtn = document.getElementById("technology");
-// const searchBtn = document.getElementById("searchBtn");
+const searchBtn = document.getElementById("searchBtn");
 
 
 // const newsQuery = document.getElementById("newsQuery");
@@ -15,6 +15,11 @@ const API_KEY = "pub_4450810716ff32cbbde27fda8ca57d7c4b416"
 const sources_news = "https://newsdata.io/api/1/latest?apikey=pub_4450810716ff32cbbde27fda8ca57d7c4b416"
 
 newsDataArr = [];
+
+sportsBtn.addEventListen("click", function(){
+    newsType.innerHTML="<h4>Search : "+newsQuery.value+"</h4>";
+    fetchQueryNews();
+})
 
 
 const fetchSourceNews = async () => {
